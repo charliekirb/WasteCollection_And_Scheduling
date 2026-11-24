@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Announcements</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link active"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="section-head-row">
+      <div class="page-header" style="margin-bottom:0;">
+        <p class="page-title">Announcements</p>
+        <p class="page-sub">Post updates for residents of Barangay New Visayas</p>
+      </div>
+      <button class="btn-primary" id="toggle-compose">+ New Announcement</button>
+    </div>
+
+    <div class="compose-box" id="compose-box">
+      <p class="field-label">Title</p>
+      <input type="text" class="clean-input" placeholder="e.g. Collection Schedule Update" style="margin-bottom:14px;"/>
+      <p class="field-label">Message</p>
+      <textarea class="clean-textarea" rows="3" placeholder="Write your announcement..." style="margin-bottom:14px;"></textarea>
+      <button class="btn-primary">Post Announcement</button>
+    </div>
+
+    <div class="announcement-card">
+      <p class="a-title">Collection Schedule Update</p>
+      <p class="a-body">Collection in Purok 2 will be moved to Tuesday.</p>
+      <p class="a-date">September 12, 2026</p>
+      <div class="row-actions">
+        <button class="btn-ghost">Edit</button>
+        <button class="btn-danger-ghost">Delete</button>
+      </div>
+    </div>
+
+    <div class="announcement-card">
+      <p class="a-title">Reminder: Proper Waste Segregation</p>
+      <p class="a-body">Residents are reminded to segregate biodegradable and recyclable waste before collection day.</p>
+      <p class="a-date">September 8, 2026</p>
+      <div class="row-actions">
+        <button class="btn-ghost">Edit</button>
+        <button class="btn-danger-ghost">Delete</button>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+document.getElementById('toggle-compose').addEventListener('click', () => {
+  document.getElementById('compose-box').classList.toggle('open');
+});
+</script>
+
+</body>
+</html>

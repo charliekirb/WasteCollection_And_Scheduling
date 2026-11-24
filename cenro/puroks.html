@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Purok Overview</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link active"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Purok Overview</p>
+      <p class="page-sub">View Puroks organized by barangay.</p>
+    </div>
+
+    <div class="coverage-card">
+      <p class="cc-title">📊 Purok Collection Coverage</p>
+      <p class="cc-sub">92% of registered Puroks have scheduled collections.</p>
+      <div class="coverage-track"><div class="coverage-fill" style="width:92%;"></div></div>
+    </div>
+
+    <div class="filters-row">
+      <select class="clean-select">
+        <option>All Barangays</option>
+        <option>Cagangohan</option>
+        <option>Gredu</option>
+        <option>San Pedro</option>
+        <option>Buenavista</option>
+      </select>
+      <select class="clean-select">
+        <option>All Status</option>
+        <option>Active</option>
+        <option>Inactive</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Barangay</th><th>Purok</th><th>Collection Day</th><th>Time</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cagangohan</td><td>Purok 1</td><td>Monday</td><td>7:00 AM</td><td><span class="status-badge status-active">Active</span></td></tr>
+          <tr><td>Cagangohan</td><td>Purok 2</td><td>Monday</td><td>8:00 AM</td><td><span class="status-badge status-active">Active</span></td></tr>
+          <tr><td>Gredu</td><td>Purok 1</td><td>Tuesday</td><td>7:00 AM</td><td><span class="status-badge status-active">Active</span></td></tr>
+          <tr><td>Gredu</td><td>Purok 2</td><td>Tuesday</td><td>8:00 AM</td><td><span class="status-badge status-active">Active</span></td></tr>
+          <tr><td>San Pedro</td><td>Purok 1</td><td>Wednesday</td><td>7:00 AM</td><td><span class="status-badge status-active">Active</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Announcements</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link active"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="section-head-row">
+      <div class="page-header" style="margin-bottom:0;">
+        <p class="page-title">Announcements</p>
+        <p class="page-sub">City-wide waste collection announcements.</p>
+      </div>
+      <button class="btn-primary" id="toggle-compose">+ Create Announcement</button>
+    </div>
+
+    <div class="compose-box" id="compose-box">
+      <p class="field-label">Title</p>
+      <input type="text" class="clean-input" placeholder="e.g. Collection Schedule Update" style="margin-bottom:14px;"/>
+      <p class="field-label">Message</p>
+      <textarea class="clean-textarea" rows="3" placeholder="Write your announcement..." style="margin-bottom:14px;"></textarea>
+      <p class="field-label">Scope</p>
+      <select class="clean-select" style="margin-bottom:14px; max-width:240px;">
+        <option>City-wide</option>
+        <option>Selected Barangays</option>
+      </select>
+      <button class="btn-primary">Post Announcement</button>
+    </div>
+
+    <div class="tab-filter">
+      <button class="tab-filter-btn active">All</button>
+      <button class="tab-filter-btn">City-wide</button>
+      <button class="tab-filter-btn">Barangay</button>
+    </div>
+
+    <div class="announcement-card">
+      <p class="a-title">🚛 Collection Schedule Update</p>
+      <p class="a-date">September 12, 2026</p>
+      <p class="a-body">Waste collection schedules may change due to operational adjustments.</p>
+      <span class="a-scope">City-wide</span>
+    </div>
+
+    <div class="announcement-card">
+      <p class="a-title">🌧️ Weather Advisory</p>
+      <p class="a-date">September 11, 2026</p>
+      <p class="a-body">Residents are advised to secure waste properly during heavy rainfall.</p>
+      <span class="a-scope">Selected Barangays</span>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+document.getElementById('toggle-compose').addEventListener('click', () => {
+  document.getElementById('compose-box').classList.toggle('open');
+});
+document.querySelectorAll('.tab-filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>

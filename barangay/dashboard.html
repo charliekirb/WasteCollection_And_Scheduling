@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Dashboard</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link active"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Barangay Dashboard</p>
+      <p class="page-sub">Barangay New Visayas • Overview for today</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📍</span>
+        <p class="stat-value">5</p>
+        <p class="stat-label">Total Puroks</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🗓️</span>
+        <p class="stat-value">3</p>
+        <p class="stat-label">Today's Collections</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">✅</span>
+        <p class="stat-value">1</p>
+        <p class="stat-label">Completed</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🕓</span>
+        <p class="stat-value">1</p>
+        <p class="stat-label">Pending</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🚫</span>
+        <p class="stat-value">0</p>
+        <p class="stat-label">Missed</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📝</span>
+        <p class="stat-value">4</p>
+        <p class="stat-label">Resident Reports</p>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <p class="section-title">Today's Collection</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Purok</th><th>Time</th><th>Collector</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Purok 1</td><td>8:00 AM</td><td>Team 1</td>
+              <td><span class="status-badge status-completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>Purok 2</td><td>9:00 AM</td><td>Team 2</td>
+              <td><span class="status-badge status-inprogress">In Progress</span></td>
+            </tr>
+            <tr>
+              <td>Purok 3</td><td>10:00 AM</td><td>Team 3</td>
+              <td><span class="status-badge status-pending">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <p class="section-title">Recent Resident Reports</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Report ID</th><th>Type</th><th>Purok</th><th>Date</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#001</td><td>Missed Collection</td><td>Purok 2</td><td>Sept. 12</td>
+              <td><span class="status-badge status-pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>#002</td><td>Garbage Accumulation</td><td>Purok 1</td><td>Sept. 12</td>
+              <td><span class="status-badge status-resolved">Resolved</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

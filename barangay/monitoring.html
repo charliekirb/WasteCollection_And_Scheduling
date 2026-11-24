@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Collection Monitoring</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link active"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Collection Monitoring</p>
+      <p class="page-sub">Live status of today's collection • Barangay Cagangohan</p>
+    </div>
+
+    <div class="section-block">
+      <p class="section-title">Today's Collection</p>
+      <div class="monitor-list">
+        <div class="monitor-row">
+          <div class="m-left">
+            <span class="m-purok">Purok 1</span>
+            <span class="m-time">8:00 AM</span>
+          </div>
+          <span class="status-badge status-completed"><span class="monitor-dot">🟢</span> Completed</span>
+        </div>
+        <div class="monitor-row">
+          <div class="m-left">
+            <span class="m-purok">Purok 2</span>
+            <span class="m-time">9:00 AM</span>
+          </div>
+          <span class="status-badge status-inprogress"><span class="monitor-dot">🔵</span> In Progress</span>
+        </div>
+        <div class="monitor-row">
+          <div class="m-left">
+            <span class="m-purok">Purok 3</span>
+            <span class="m-time">10:00 AM</span>
+          </div>
+          <span class="status-badge status-pending"><span class="monitor-dot">🟡</span> Pending</span>
+        </div>
+        <div class="monitor-row">
+          <div class="m-left">
+            <span class="m-purok">Purok 4</span>
+            <span class="m-time">11:00 AM</span>
+          </div>
+          <span class="status-badge status-missed"><span class="monitor-dot">🔴</span> Missed</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

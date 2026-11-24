@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — City-Wide Collection Monitoring</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link active"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">City-Wide Collection Monitoring</p>
+      <p class="page-sub">Monitor collection activities across all barangays.</p>
+    </div>
+
+    <div class="coverage-card">
+      <p class="cc-title">Collection Health</p>
+      <p class="cc-sub">Overall Collection Performance: 84%</p>
+      <div class="health-indicator">
+        <div class="health-seg on good">Excellent</div>
+        <div class="health-seg">Good</div>
+        <div class="health-seg">Needs Attention</div>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">🟢</span>
+        <p class="stat-value">72</p>
+        <p class="stat-label">Completed</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🔵</span>
+        <p class="stat-value">10</p>
+        <p class="stat-label">In Progress</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🟡</span>
+        <p class="stat-value">10</p>
+        <p class="stat-label">Pending</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🔴</span>
+        <p class="stat-value">4</p>
+        <p class="stat-label">Missed</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Barangay</th><th>Purok</th><th>Time</th><th>Collector</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cagangohan</td><td>Purok 1</td><td>7:00 AM</td><td>Team A</td>
+            <td><span class="status-badge status-completed">🟢 Completed</span></td>
+          </tr>
+          <tr>
+            <td>Gredu</td><td>Purok 3</td><td>8:00 AM</td><td>Team B</td>
+            <td><span class="status-badge status-inprogress">🔵 In Progress</span></td>
+          </tr>
+          <tr>
+            <td>San Pedro</td><td>Purok 2</td><td>9:00 AM</td><td>Team C</td>
+            <td><span class="status-badge status-pending">🟡 Pending</span></td>
+          </tr>
+          <tr>
+            <td>Buenavista</td><td>Purok 5</td><td>10:00 AM</td><td>Team D</td>
+            <td><span class="status-badge status-missed">🔴 Missed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

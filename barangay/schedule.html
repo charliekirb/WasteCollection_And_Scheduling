@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Collection Schedule</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link active"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="section-head-row">
+      <div class="page-header" style="margin-bottom:0;">
+        <p class="page-title">Collection Schedule</p>
+        <p class="page-sub">Weekly collection routes for Barangay New Visayas</p>
+      </div>
+      <button class="btn-primary">+ Add Schedule</button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Purok</th><th>Day</th><th>Time</th><th>Waste Type</th><th>Collector</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Purok 1</td><td>Monday</td><td>8:00 AM</td><td>Regular</td><td>Team 1</td>
+            <td><div class="row-actions"><button class="btn-ghost">Edit</button></div></td>
+          </tr>
+          <tr>
+            <td>Purok 2</td><td>Wednesday</td><td>9:00 AM</td><td>Recyclable</td><td>Team 2</td>
+            <td><div class="row-actions"><button class="btn-ghost">Edit</button></div></td>
+          </tr>
+          <tr>
+            <td>Purok 3</td><td>Friday</td><td>10:00 AM</td><td>Regular</td><td>Team 3</td>
+            <td><div class="row-actions"><button class="btn-ghost">Edit</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

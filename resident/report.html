@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>LinisPanabo — Report</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="resident.css">
+</head>
+<body>
+
+<div class="phone-shell">
+
+  <div class="status-bar">
+    <span>11:11</span>
+    <span>📶 🔋</span>
+  </div>
+
+  <div class="app-topbar">
+    <p class="page-heading">Report a Concern</p>
+    <p class="subline">New Visayas • Purok 6</p>
+  </div>
+
+  <div class="app-content">
+
+    <div class="report-tabs">
+      <button id="tab-submit" class="rtab-btn">Submit Report</button>
+      <button id="tab-mine" class="rtab-btn">My Reports</button>
+    </div>
+
+    <div id="tab-area"></div>
+
+  </div>
+
+  <div class="bottom-nav">
+    <a href="home.html" class="nav-item">
+      <span class="nav-icon">🏠</span>
+      <span class="nav-label">Home</span>
+    </a>
+    <a href="schedule.html" class="nav-item">
+      <span class="nav-icon">📅</span>
+      <span class="nav-label">Schedule</span>
+    </a>
+    <a href="report.html" class="nav-item active">
+      <span class="nav-icon">⚠️</span>
+      <span class="nav-label">Report</span>
+    </a>
+    <a href="notifications.html" class="nav-item">
+      <span class="nav-icon">🔔</span>
+      <span class="nav-label">Alerts</span>
+    </a>
+    <a href="profile.html" class="nav-item">
+      <span class="nav-icon">👤</span>
+      <span class="nav-label">Profile</span>
+    </a>
+  </div>
+
+</div>
+
+<script>
+const tabs = {
+  submit: () => `
+    <div class="field-wrap">
+      <p class="field-label">Report type</p>
+      <select>
+        <option>Missed Collection</option>
+        <option>Garbage Accumulation</option>
+        <option>Improper Waste Disposal</option>
+        <option>Other Waste Concern</option>
+      </select>
+    </div>
+    <div class="field-wrap">
+      <p class="field-label">Barangay</p>
+      <input type="text" value="Inyong Barangay" />
+    </div>
+    <div class="field-wrap">
+      <p class="field-label">Purok</p>
+      <input type="text" placeholder="Inyong Purok" />
+    </div>
+    <div class="field-wrap">
+      <p class="field-label">Date</p>
+      <input type="text" placeholder="Petsa" />
+    </div>
+    <div class="field-wrap">
+      <p class="field-label">Description</p>
+      <textarea rows="3" placeholder="Unsa'y nahitabo?"></textarea>
+    </div>
+    <button class="primary-btn">Submit Report</button>
+  `,
+  mine: () => `
+    <div class="report-item">
+      <div class="top-row">
+        <div>
+          <p class="rid">#001</p>
+          <p class="rtype">Missed Collection</p>
+          <p class="rloc">Purok 2</p>
+        </div>
+        <span class="status-badge status-review">Under Review</span>
+      </div>
+    </div>
+    <div class="report-item">
+      <div class="top-row">
+        <div>
+          <p class="rid">#002</p>
+          <p class="rtype">Garbage Accumulation</p>
+          <p class="rloc">Purok 1</p>
+        </div>
+        <span class="status-badge status-resolved">Resolved</span>
+      </div>
+    </div>
+  `
+};
+
+let tab = 'submit';
+
+function render() {
+  document.getElementById('tab-submit').classList.toggle('active', tab === 'submit');
+  document.getElementById('tab-mine').classList.toggle('active', tab === 'mine');
+  document.getElementById('tab-area').innerHTML = tabs[tab]();
+}
+
+document.getElementById('tab-submit').addEventListener('click', () => { tab = 'submit'; render(); });
+document.getElementById('tab-mine').addEventListener('click', () => { tab = 'mine'; render(); });
+render();
+</script>
+
+</body>
+</html>

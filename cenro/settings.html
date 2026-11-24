@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — System Settings</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link active"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">System Settings</p>
+    </div>
+
+    <div class="settings-section">
+      <p class="ss-title">General</p>
+      <div class="field-wrap">
+        <p class="field-label">System Name</p>
+        <input type="text" class="clean-input" value="PanaWISER" style="max-width:360px;"/>
+      </div>
+      <div class="field-wrap" style="margin-top:12px;">
+        <p class="field-label">City</p>
+        <input type="text" class="clean-input" value="Panabo City" style="max-width:360px;"/>
+      </div>
+      <div class="field-wrap" style="margin-top:12px;">
+        <p class="field-label">Office</p>
+        <input type="text" class="clean-input" value="City Environment and Natural Resources Office" style="max-width:360px;"/>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <p class="ss-title">Appearance</p>
+      <div class="settings-list">
+        <div class="settings-item">
+          <span class="si-label">Light Mode</span>
+          <div class="toggle-pill on"><div class="knob"></div></div>
+        </div>
+        <div class="settings-item">
+          <span class="si-label">Dark Mode</span>
+          <div class="toggle-pill"><div class="knob"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <p class="ss-title">Notifications</p>
+      <div class="settings-list">
+        <div class="settings-item">
+          <span class="si-label">Resident Report Alerts</span>
+          <div class="toggle-pill on"><div class="knob"></div></div>
+        </div>
+        <div class="settings-item">
+          <span class="si-label">Collection Alerts</span>
+          <div class="toggle-pill on"><div class="knob"></div></div>
+        </div>
+        <div class="settings-item">
+          <span class="si-label">Announcement Alerts</span>
+          <div class="toggle-pill"><div class="knob"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <p class="ss-title">Account</p>
+      <div class="row-actions">
+        <button class="btn-ghost">Change Password</button>
+        <button class="btn-danger-ghost" onclick="window.location.href='../login.html'">Logout</button>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+document.querySelectorAll('.toggle-pill').forEach(t => {
+  t.addEventListener('click', () => t.classList.toggle('on'));
+});
+</script>
+
+</body>
+</html>

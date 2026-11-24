@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Barangay Management</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link active"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Barangay Management</p>
+      <p class="page-sub">Manage and monitor all barangays within Panabo City.</p>
+    </div>
+
+    <div class="section-head-row">
+      <div class="search-bar">
+        <span class="sico">🔍</span>
+        <input type="text" placeholder="Search barangay..."/>
+      </div>
+      <select class="clean-select">
+        <option>All Barangays</option>
+        <option>Active</option>
+        <option>Inactive</option>
+      </select>
+      <button class="btn-primary" style="margin-left:auto;">+ Add Barangay</button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Barangay</th><th>Puroks</th><th>Schedule</th><th>Reports</th><th>Status</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cagangohan</td><td>12</td><td>Active</td><td>3</td>
+            <td><span class="status-badge status-active">Active</span></td>
+            <td><a href="barangay-details.html" class="btn-ghost">View</a></td>
+          </tr>
+          <tr>
+            <td>Gredu</td><td>10</td><td>Active</td><td>5</td>
+            <td><span class="status-badge status-active">Active</span></td>
+            <td><a href="barangay-details.html" class="btn-ghost">View</a></td>
+          </tr>
+          <tr>
+            <td>Buenavista</td><td>8</td><td>Active</td><td>2</td>
+            <td><span class="status-badge status-active">Active</span></td>
+            <td><a href="barangay-details.html" class="btn-ghost">View</a></td>
+          </tr>
+          <tr>
+            <td>San Pedro</td><td>9</td><td>Active</td><td>4</td>
+            <td><span class="status-badge status-active">Active</span></td>
+            <td><a href="barangay-details.html" class="btn-ghost">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination">
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">4</button>
+      <span class="page-dots">...</span>
+      <button class="page-btn">40</button>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

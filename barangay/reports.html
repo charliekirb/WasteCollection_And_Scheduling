@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Reports</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link active"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Reports</p>
+      <p class="page-sub">Collection and resident report summary • Barangay Cagangohan</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">🗓️</span>
+        <p class="stat-value">128</p>
+        <p class="stat-label">Total Collections</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">✅</span>
+        <p class="stat-value">112</p>
+        <p class="stat-label">Completed</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🚫</span>
+        <p class="stat-value">6</p>
+        <p class="stat-label">Missed</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📝</span>
+        <p class="stat-value">24</p>
+        <p class="stat-label">Total Resident Reports</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🟢</span>
+        <p class="stat-value">18</p>
+        <p class="stat-label">Resolved Reports</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🟡</span>
+        <p class="stat-value">6</p>
+        <p class="stat-label">Unresolved Reports</p>
+      </div>
+    </div>
+
+    <div class="charts-row">
+      <div class="chart-card">
+        <p class="chart-title">Weekly Collections — Completed vs Missed</p>
+        <div class="bar-chart">
+          <div class="bar-col">
+            <div class="bar" style="height:88%;"></div>
+            <span class="bar-label">Mon</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar alt" style="height:14%;"></div>
+            <span class="bar-label">Tue</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar" style="height:95%;"></div>
+            <span class="bar-label">Wed</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar" style="height:80%;"></div>
+            <span class="bar-label">Thu</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar alt" style="height:10%;"></div>
+            <span class="bar-label">Fri</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar" style="height:70%;"></div>
+            <span class="bar-label">Sat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <p class="chart-title">Resident Reports Status</p>
+        <div class="donut-wrap">
+          <div class="donut" style="background: conic-gradient(#4C7A2A 0% 75%, #F0B429 75% 100%);">
+            <div class="donut" style="width:76px; height:76px; background:var(--card-bg);">
+              <span class="donut-center">75%</span>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="leg-item"><span class="swatch" style="background:#4C7A2A;"></span>Resolved (18)</div>
+            <div class="leg-item"><span class="swatch" style="background:#F0B429;"></span>Unresolved (6)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

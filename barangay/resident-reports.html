@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Resident Reports</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link active"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Resident Reports</p>
+      <p class="page-sub">Concerns submitted by residents of Barangay New Visayas</p>
+    </div>
+
+    <div class="filters-row">
+      <select class="clean-select">
+        <option>Report Type</option>
+        <option>Missed Collection</option>
+        <option>Garbage Accumulation</option>
+        <option>Improper Waste Disposal</option>
+        <option>Other Waste Concern</option>
+      </select>
+      <select class="clean-select">
+        <option>Purok</option>
+        <option>Purok 1</option>
+        <option>Purok 2</option>
+        <option>Purok 3</option>
+        <option>Purok 4</option>
+        <option>Purok 5</option>
+      </select>
+      <select class="clean-select">
+        <option>Status</option>
+        <option>Pending</option>
+        <option>Under Review</option>
+        <option>Action Taken</option>
+        <option>Resolved</option>
+      </select>
+      <select class="clean-select">
+        <option>Date</option>
+        <option>Today</option>
+        <option>This Week</option>
+        <option>This Month</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>Report ID</th><th>Type</th><th>Purok</th><th>Date</th><th>Status</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#001</td><td>Missed Collection</td><td>Purok 2</td><td>Sept. 12</td>
+            <td><span class="status-badge status-pending">Pending</span></td>
+            <td><a href="report-detail.html" class="btn-ghost" style="text-decoration:none;">View</a></td>
+          </tr>
+          <tr>
+            <td>#002</td><td>Garbage Accumulation</td><td>Purok 1</td><td>Sept. 12</td>
+            <td><span class="status-badge status-resolved">Resolved</span></td>
+            <td><a href="report-detail.html" class="btn-ghost" style="text-decoration:none;">View</a></td>
+          </tr>
+          <tr>
+            <td>#003</td><td>Improper Waste Disposal</td><td>Purok 3</td><td>Sept. 11</td>
+            <td><span class="status-badge status-review">Under Review</span></td>
+            <td><a href="report-detail.html" class="btn-ghost" style="text-decoration:none;">View</a></td>
+          </tr>
+          <tr>
+            <td>#004</td><td>Other Waste Concern</td><td>Purok 4</td><td>Sept. 10</td>
+            <td><span class="status-badge status-actiontaken">Action Taken</span></td>
+            <td><a href="report-detail.html" class="btn-ghost" style="text-decoration:none;">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

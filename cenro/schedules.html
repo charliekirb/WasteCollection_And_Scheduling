@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Collection Schedules</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link active"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Collection Schedules</p>
+      <p class="page-sub">Planned waste collection routes across Panabo City.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📅</span>
+        <p class="stat-value">86</p>
+        <p class="stat-label">Today's Schedule</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📆</span>
+        <p class="stat-value">79</p>
+        <p class="stat-label">Tomorrow's Schedule</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🗓️</span>
+        <p class="stat-value">312</p>
+        <p class="stat-label">Scheduled Collections</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">❔</span>
+        <p class="stat-value">5</p>
+        <p class="stat-label">Unassigned Schedules</p>
+      </div>
+    </div>
+
+    <div class="calendar-card">
+      <div class="calendar-head">
+        <span class="cal-month">September 2026</span>
+        <div class="row-actions">
+          <button class="btn-ghost">‹ Prev</button>
+          <button class="btn-ghost">Next ›</button>
+        </div>
+      </div>
+      <div class="calendar-grid">
+        <div class="cal-dow">Sun</div><div class="cal-dow">Mon</div><div class="cal-dow">Tue</div>
+        <div class="cal-dow">Wed</div><div class="cal-dow">Thu</div><div class="cal-dow">Fri</div><div class="cal-dow">Sat</div>
+
+        <div class="cal-day empty"></div><div class="cal-day empty"></div>
+        <div class="cal-day"><span class="cd-num">1</span><div class="cal-entry g">Cagangohan 7AM</div></div>
+        <div class="cal-day"><span class="cd-num">2</span><div class="cal-entry g">Gredu 8AM</div></div>
+        <div class="cal-day"><span class="cd-num">3</span><div class="cal-entry y">San Pedro 9AM</div></div>
+        <div class="cal-day"><span class="cd-num">4</span></div>
+        <div class="cal-day"><span class="cd-num">5</span></div>
+
+        <div class="cal-day"><span class="cd-num">6</span></div>
+        <div class="cal-day"><span class="cd-num">7</span><div class="cal-entry g">Cagangohan 7AM</div></div>
+        <div class="cal-day"><span class="cd-num">8</span><div class="cal-entry g">Gredu 8AM</div></div>
+        <div class="cal-day"><span class="cd-num">9</span><div class="cal-entry y">San Pedro 9AM</div></div>
+        <div class="cal-day"><span class="cd-num">10</span></div>
+        <div class="cal-day"><span class="cd-num">11</span></div>
+        <div class="cal-day"><span class="cd-num">12</span><div class="cal-entry g">Cagangohan 7AM</div><div class="cal-entry y">Buenavista 10AM</div></div>
+
+        <div class="cal-day"><span class="cd-num">13</span></div>
+        <div class="cal-day"><span class="cd-num">14</span><div class="cal-entry g">Gredu 8AM</div></div>
+        <div class="cal-day"><span class="cd-num">15</span><div class="cal-entry g">Cagangohan 7AM</div></div>
+        <div class="cal-day"><span class="cd-num">16</span><div class="cal-entry y">San Pedro 9AM</div></div>
+        <div class="cal-day"><span class="cd-num">17</span></div>
+        <div class="cal-day"><span class="cd-num">18</span></div>
+        <div class="cal-day"><span class="cd-num">19</span></div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <p class="section-title">Upcoming Collections</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Date</th><th>Barangay</th><th>Purok</th><th>Time</th><th>Collector</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sept 14</td><td>Cagangohan</td><td>Purok 1</td><td>7:00 AM</td><td>Team A</td></tr>
+            <tr><td>Sept 14</td><td>Gredu</td><td>Purok 3</td><td>8:00 AM</td><td>Team B</td></tr>
+            <tr><td>Sept 16</td><td>San Pedro</td><td>Purok 2</td><td>9:00 AM</td><td>Team C</td></tr>
+            <tr><td>Sept 17</td><td>Buenavista</td><td>Purok 5</td><td>10:00 AM</td><td>Team D</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

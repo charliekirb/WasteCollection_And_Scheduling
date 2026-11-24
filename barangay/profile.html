@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaboWAS — Barangay Profile</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="barangay.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">Barangay Portal</p>
+      </div>
+    </div>
+
+    <nav class="nav-section">
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+      <a href="schedule.html" class="nav-link"><span class="ico">📅</span>Collection Schedule</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="reports.html" class="nav-link"><span class="ico">📊</span>Reports</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="nav-link active"><span class="ico">👤</span>Profile</a>
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Barangay Profile</p>
+    </div>
+
+    <div class="bprofile-header">
+      <div class="bprofile-avatar"><img src="../assets/BrgyLogo.png" alt="Barangay New Visayas hall"/></div>
+      <p class="b-name">Barangay New Visayas</p>
+      <p class="b-role">Barangay Official Account</p>
+    </div>
+
+    <div class="report-detail-card" style="max-width:460px; margin:0 auto;">
+      <p class="section-title" style="margin-bottom:16px;">Barangay Information</p>
+
+      <div class="rd-row"><span class="rd-label">Barangay</span><span class="rd-value">New Visayas</span></div>
+      <div class="rd-row"><span class="rd-label">City</span><span class="rd-value">Panabo City</span></div>
+      <div class="rd-row"><span class="rd-label">Total Puroks</span><span class="rd-value">12</span></div>
+      <div class="rd-row"><span class="rd-label">Account Type</span><span class="rd-value">Barangay Official</span></div>
+      <div class="rd-row"><span class="rd-label">Status</span><span class="rd-value">🟢 Active</span></div>
+
+      <p class="section-title" style="margin: 22px 0 4px;">Account Settings</p>
+
+      <div class="bprofile-actions">
+        <button class="btn-block-primary">Edit Barangay Information</button>
+        <button class="btn-block-ghost">Change Password</button>
+        <button class="btn-block-danger" onclick="window.location.href='../login.html'">Logout</button>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

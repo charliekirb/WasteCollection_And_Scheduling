@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>LinisPanabo — Create resident account</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="brand-header">
+    <div class="brand-mark"><img src="assets/Pana.png" alt="PanaWISER logo"/></div>
+    <p class="brand-name">PanaWISER</p>
+    <p class="brand-tag">Waste Collection Scheduling<br/>and Monitoring System</p>
+  </div>
+
+  <div class="partner-row">
+    <img src="assets/PanaboLogo.png" alt="Panabo City seal"/>
+    <span>An official system of <strong>CENRO</strong>, City of Panabo</span>
+  </div>
+
+  <p class="page-title">Create your resident account</p>
+  <p class="page-sub">For residents of Panabo City only</p>
+
+  <div class="field-wrap">
+    <p class="field-label">Full name</p>
+    <input type="text" placeholder="Enter your full name"/>
+  </div>
+
+  <div class="field-wrap">
+    <p class="field-label">Mobile number</p>
+    <input type="text" placeholder="09XX XXX XXXX"/>
+  </div>
+
+  <div class="field-wrap">
+    <p class="field-label">Email (optional)</p>
+    <input type="text" placeholder="name@email.com"/>
+  </div>
+
+  <div class="field-wrap">
+    <p class="field-label">Barangay</p>
+    <select id="barangay-select"></select>
+  </div>
+
+  <div class="field-wrap">
+    <p class="field-label">Zone / Purok</p>
+    <input type="text" placeholder="Zone 2"/>
+  </div>
+
+  <div class="field-row">
+    <div class="field-wrap">
+      <p class="field-label">Password</p>
+      <input type="password" placeholder="Create a password"/>
+    </div>
+    <div class="field-wrap">
+      <p class="field-label">Confirm password</p>
+      <input type="password" placeholder="Re-enter password"/>
+    </div>
+  </div>
+
+  <button class="primary-btn">Create account</button>
+
+  <p class="login-note">Already have an account? <a href="login.html">Sign in</a></p>
+  <p class="footer-note">Panabo City, Davao del Norte<br/>&quot;Service to Panaboans, Service to God&quot;</p>
+</div>
+
+<script>
+const barangays = [
+  "A. O. Floirendo","Buenavista","Cacao","Cagangohan","Consolacion","Dapco",
+  "Datu Abdul Dadia","Gredu (Poblacion)","J.P. Laurel","Kasilak","Katipunan",
+  "Katualan","Kauswagan","Kiotoy","Little Panay","Lower Panaga (Roxas)",
+  "Mabunao","Maduao","Malativas","Manay","Nanyo","New Malaga (Dalisay)",
+  "New Malitbog","New Pandan (Poblacion)","New Visayas","Quezon","Salvacion",
+  "San Francisco (Poblacion)","San Nicolas","San Pedro","San Roque","San Vicente",
+  "Santa Cruz","Santo Niño (Poblacion)","Sindaton","Southern Davao","Tagpore",
+  "Tibungol","Upper Licanan","Waterfall"
+];
+
+document.getElementById('barangay-select').innerHTML =
+  barangays.map(b => `<option>Barangay ${b}</option>`).join('');
+</script>
+
+</body>
+</html>

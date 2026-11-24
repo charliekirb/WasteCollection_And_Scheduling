@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanaWISER — Reports &amp; Analytics</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cenro.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">♻️</div>
+      <div>
+        <p class="name">PanaWISER</p>
+        <p class="sub">CENRO Super Admin</p>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <p class="nav-group-label">Main</p>
+      <a href="dashboard.html" class="nav-link"><span class="ico">🏠</span>Dashboard</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Management</p>
+      <a href="barangays.html" class="nav-link"><span class="ico">🏘️</span>Barangays</a>
+      <a href="barangay-officials.html" class="nav-link"><span class="ico">🧑‍💼</span>Barangay Officials</a>
+      <a href="puroks.html" class="nav-link"><span class="ico">📍</span>Puroks</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Collection</p>
+      <a href="schedules.html" class="nav-link"><span class="ico">🗓️</span>Collection Schedules</a>
+      <a href="monitoring.html" class="nav-link"><span class="ico">🛰️</span>Collection Monitoring</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Reports</p>
+      <a href="resident-reports.html" class="nav-link"><span class="ico">⚠️</span>Resident Reports</a>
+      <a href="announcements.html" class="nav-link"><span class="ico">📢</span>Announcements</a>
+      <a href="analytics.html" class="nav-link active"><span class="ico">📊</span>Reports &amp; Analytics</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">System</p>
+      <a href="profile.html" class="nav-link"><span class="ico">👤</span>Profile</a>
+      <a href="settings.html" class="nav-link"><span class="ico">⚙️</span>Settings</a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../login.html" class="nav-link"><span class="ico">🚪</span>Logout</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-title">Reports &amp; Analytics</p>
+      <p class="page-sub">View city-wide waste collection performance and resident concerns.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📈</span>
+        <p class="stat-value">84%</p>
+        <p class="stat-label">Collection Rate</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">❌</span>
+        <p class="stat-value">24</p>
+        <p class="stat-label">Missed Collections</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📝</span>
+        <p class="stat-value">156</p>
+        <p class="stat-label">Resident Reports</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">✅</span>
+        <p class="stat-value">132</p>
+        <p class="stat-label">Resolved Reports</p>
+      </div>
+    </div>
+
+    <div class="charts-row">
+      <div class="chart-card">
+        <p class="chart-title">Collection Performance — Completed vs Missed</p>
+        <div class="bar-chart">
+          <div class="bar-col"><div class="bar" style="height:85%;"></div><span class="bar-label">Jan</span></div>
+          <div class="bar-col"><div class="bar" style="height:80%;"></div><span class="bar-label">Feb</span></div>
+          <div class="bar-col"><div class="bar" style="height:90%;"></div><span class="bar-label">Mar</span></div>
+          <div class="bar-col"><div class="bar" style="height:75%;"></div><span class="bar-label">Apr</span></div>
+          <div class="bar-col"><div class="bar" style="height:88%;"></div><span class="bar-label">May</span></div>
+          <div class="bar-col"><div class="bar" style="height:84%;"></div><span class="bar-label">Jun</span></div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <p class="chart-title">Reports by Type</p>
+        <div class="donut-wrap">
+          <div class="donut" style="background: conic-gradient(#4C7A2A 0% 42%, #F0B429 42% 68%, #1F6B7A 68% 88%, #8B8A7C 88% 100%);">
+            <div class="donut" style="width:70px; height:70px; background:var(--card-bg);">
+              <span class="donut-center">156</span>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="leg-item"><span class="swatch" style="background:#4C7A2A;"></span>Missed Collection</div>
+            <div class="leg-item"><span class="swatch" style="background:#F0B429;"></span>Garbage Accumulation</div>
+            <div class="leg-item"><span class="swatch" style="background:#1F6B7A;"></span>Improper Disposal</div>
+            <div class="leg-item"><span class="swatch" style="background:#8B8A7C;"></span>Other</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-card full">
+        <p class="chart-title">Barangay Performance</p>
+        <div class="hbar-list">
+          <div class="hbar-row">
+            <span class="hbar-name">Cagangohan</span>
+            <div class="hbar-track"><div class="hbar-fill" style="width:92%;"></div></div>
+            <span class="hbar-pct">92%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-name">Gredu</span>
+            <div class="hbar-track"><div class="hbar-fill" style="width:89%;"></div></div>
+            <span class="hbar-pct">89%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-name">San Pedro</span>
+            <div class="hbar-track"><div class="hbar-fill" style="width:86%;"></div></div>
+            <span class="hbar-pct">86%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-name">Buenavista</span>
+            <div class="hbar-track"><div class="hbar-fill" style="width:84%;"></div></div>
+            <span class="hbar-pct">84%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <p class="section-title">Most Reported Barangays</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Rank</th><th>Barangay</th><th>Reports</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Cagangohan</td><td>18</td></tr>
+            <tr><td>2</td><td>Gredu</td><td>15</td></tr>
+            <tr><td>3</td><td>San Pedro</td><td>13</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
